@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(37, 37, 37);
+    font-family: sans-serif;
+    
+}
+
+.container {
+    background-color: black;
+    height: 95vh;
+    width: 25vw;
+    margin: 0 auto;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.display {
+    flex: 3;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    margin-bottom: 20px;
+    font-size: 5rem;
+    overflow-x: auto;
+    margin: 0px 13px;
+}
+
+.display::-webkit-scrollbar {
+    display: none;;
+}
+
+.buttons {
+    flex: 5;
+    flex-shrink: auto;
+    box-sizing: border-box;
+    min-height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0px;
+    justify-content: space-around;
+
+
+}
+button {
+    background-color: #2f2f2f;
+}
+.delete, .ac, .mod {
+    background-color: #5b5b5b;
+}
+
+.divide, .multiply, .subtract, .equal, .addition {
+    background-color: #ff9200;
+}
+
+.buttons button {
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    user-select: none;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+
+button:hover {
+    transform: scale(1.02);
+}
+button:active {
+    filter: brightness(150%);
+    transform: scale(1.05);
+}
